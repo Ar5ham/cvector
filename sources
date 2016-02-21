@@ -1,0 +1,60 @@
+#
+# target name
+#
+
+TARGETNAME = cvector
+TARGETTYPE = PROGRAM
+
+
+#
+# compiler and linker options
+#
+
+USE_STL=1
+STL_VER=110
+USE_NATIVE_EH=1
+
+USE_STL=1
+STL_VER=110
+USE_NATIVE_EH=1
+
+UMTYPE = console
+UMENTRY = wmain
+
+USE_MSVCRT = 1
+
+MUI=0
+MUI_COMMENT=non-shipping tool
+
+C_DEFINES=$(C_DEFINES) /DUNICODE /D_UNICODE
+
+#
+# precompiled header defines
+#
+
+PRECOMPILED_CXX = 1
+PRECOMPILED_INCLUDE = precomp.h
+#USE_UMBRELLA_LIBS=1
+
+#
+# includes specific to this directory
+#
+
+INCLUDES =                              \
+    $(INCLUDES);                        \
+
+
+#
+# target libraries (list alphabetically)
+#
+
+TARGETLIBS=                                               \
+    $(TARGETLIBS)                                         \
+
+#
+# source files (list alphabetically)
+#
+
+SOURCES = \
+    cvector.c   \
+    main.c      \
