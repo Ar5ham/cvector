@@ -34,9 +34,9 @@ wmain (
 
     for (int j = 0; j < _size(&cvec); j++)
          wprintf(L"%ls ", (PCWSTR*) _get(&cvec, j));
-     wprintf(L"\n");
+    wprintf(L"\n");
 
-     _free(&cvec);
+    _free(&cvec);
 
     return 0;
 }
