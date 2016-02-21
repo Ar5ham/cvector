@@ -36,5 +36,7 @@ wmain (
          wprintf(L"%ls ", (PCWSTR*) _get(&cvec, j));
      wprintf(L"\n");
 
+     _free(&cvec);
+
     return 0;
 }
